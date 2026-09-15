@@ -1,0 +1,12 @@
+# Ignore all compiled Java files
+*.class
+
+# Ignore folders
+build/
+nbproject/
+test/
+
+# Ignore files
+build.xml
+manifest.mf
+desktop.ini
