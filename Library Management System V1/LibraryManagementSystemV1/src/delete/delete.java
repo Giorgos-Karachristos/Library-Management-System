@@ -1,11 +1,13 @@
-package emfanisi;
+package delete;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-import main.main;
+
+
+import librarymanagementsystemv1.LibraryManagementSystemV1;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
@@ -14,12 +16,12 @@ import javax.swing.JOptionPane;
  *
  * @author USER
  */
-public class emfanisi extends javax.swing.JFrame {
+public class delete extends javax.swing.JFrame {
 
     /**
      * Creates new form insert
      */
-    public emfanisi() {
+    public delete() {
         initComponents();
     }
 
@@ -33,7 +35,7 @@ public class emfanisi extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jLabelEmfanisi = new javax.swing.JLabel();
+        jLabelDelete = new javax.swing.JLabel();
         jButtonMelos = new javax.swing.JButton();
         jButtonProsopiko = new javax.swing.JButton();
         jButtonRafiera = new javax.swing.JButton();
@@ -43,16 +45,16 @@ public class emfanisi extends javax.swing.JFrame {
         jButtonPiso = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("ΕΜΦΑΝΙΣΗ");
+        setTitle("ΔΙΑΓΡΑΦΗ");
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
-        jLabelEmfanisi.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabelEmfanisi.setText("ΕΜΦΑΝΙΣΗ");
+        jLabelDelete.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabelDelete.setText("ΔΙΑΓΡΑΦΗ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new java.awt.Insets(20, 20, 20, 20);
-        getContentPane().add(jLabelEmfanisi, gridBagConstraints);
+        getContentPane().add(jLabelDelete, gridBagConstraints);
 
         jButtonMelos.setText("Μέλος");
         jButtonMelos.addActionListener(new java.awt.event.ActionListener() {
@@ -145,31 +147,31 @@ public class emfanisi extends javax.swing.JFrame {
 
     private void jButtonMelosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMelosActionPerformed
         // TODO add your handling code here:
-        emfanisi_melos me = new emfanisi_melos();
+        delete_melos me = new delete_melos();
         me.setVisible(true);
     }//GEN-LAST:event_jButtonMelosActionPerformed
 
     private void jButtonProsopikoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonProsopikoActionPerformed
         // TODO add your handling code here:
-        emfanisi_prosopiko pr = new emfanisi_prosopiko();
+        delete_prosopiko pr = new delete_prosopiko();
         pr.setVisible(true);
     }//GEN-LAST:event_jButtonProsopikoActionPerformed
 
     private void jButtonRafieraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRafieraActionPerformed
         // TODO add your handling code here:
-        emfanisi_rafiera ra = new emfanisi_rafiera();
+        delete_rafiera ra = new delete_rafiera();
         ra.setVisible(true);
     }//GEN-LAST:event_jButtonRafieraActionPerformed
 
     private void jButtonBiblioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBiblioActionPerformed
         // TODO add your handling code here:
-        emfanisi_biblio bi = new emfanisi_biblio();
+        delete_biblio bi = new delete_biblio();
         bi.setVisible(true);
     }//GEN-LAST:event_jButtonBiblioActionPerformed
 
     private void jButtonDanismosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDanismosActionPerformed
         // TODO add your handling code here:
-        emfanisi_danismos da = new emfanisi_danismos();
+        delete_danismos da = new delete_danismos();
         da.setVisible(true);
     }//GEN-LAST:event_jButtonDanismosActionPerformed
 
@@ -183,7 +185,7 @@ public class emfanisi extends javax.swing.JFrame {
     private void jButtonPisoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPisoActionPerformed
         // TODO add your handling code here:
         close();
-        main ma = new main();
+        LibraryManagementSystemV1 ma = new LibraryManagementSystemV1();
         ma.setVisible(true);
     }//GEN-LAST:event_jButtonPisoActionPerformed
 
@@ -208,20 +210,20 @@ public class emfanisi extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(emfanisi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(delete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(emfanisi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(delete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(emfanisi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(delete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(emfanisi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(delete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new emfanisi().setVisible(true);
+                new delete().setVisible(true);
             }
         });
     }
@@ -234,6 +236,6 @@ public class emfanisi extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPiso;
     private javax.swing.JButton jButtonProsopiko;
     private javax.swing.JButton jButtonRafiera;
-    private javax.swing.JLabel jLabelEmfanisi;
+    private javax.swing.JLabel jLabelDelete;
     // End of variables declaration//GEN-END:variables
 }

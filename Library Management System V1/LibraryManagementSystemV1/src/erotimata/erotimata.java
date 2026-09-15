@@ -6,7 +6,7 @@ package erotimata;
 
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
-import main.main;
+import librarymanagementsystemv1.LibraryManagementSystemV1;
 
 /**
  *
@@ -214,7 +214,7 @@ public class erotimata extends javax.swing.JFrame {
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         close();
-        main ma = new main();
+        LibraryManagementSystemV1 ma = new LibraryManagementSystemV1();
         ma.setVisible(true);
     }//GEN-LAST:event_jButton11ActionPerformed
 

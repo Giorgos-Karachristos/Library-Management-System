@@ -1,11 +1,13 @@
-package logfile;
+package edit;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-import main.main;
+
+
+import librarymanagementsystemv1.LibraryManagementSystemV1;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
@@ -14,12 +16,12 @@ import javax.swing.JOptionPane;
  *
  * @author USER
  */
-public class logfile extends javax.swing.JFrame {
+public class edit extends javax.swing.JFrame {
 
     /**
      * Creates new form insert
      */
-    public logfile() {
+    public edit() {
         initComponents();
     }
 
@@ -33,7 +35,7 @@ public class logfile extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jLabelEmfanisi = new javax.swing.JLabel();
+        jLabelEdit = new javax.swing.JLabel();
         jButtonMelos = new javax.swing.JButton();
         jButtonProsopiko = new javax.swing.JButton();
         jButtonRafiera = new javax.swing.JButton();
@@ -43,16 +45,16 @@ public class logfile extends javax.swing.JFrame {
         jButtonPiso = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Log file");
+        setTitle("ΕΠΕΞΕΡΓΑΣΙΑ");
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
-        jLabelEmfanisi.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabelEmfanisi.setText("Logfile");
+        jLabelEdit.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabelEdit.setText("ΕΠΕΞΕΡΓΑΣΙΑ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new java.awt.Insets(20, 20, 20, 20);
-        getContentPane().add(jLabelEmfanisi, gridBagConstraints);
+        getContentPane().add(jLabelEdit, gridBagConstraints);
 
         jButtonMelos.setText("Μέλος");
         jButtonMelos.addActionListener(new java.awt.event.ActionListener() {
@@ -145,31 +147,31 @@ public class logfile extends javax.swing.JFrame {
 
     private void jButtonMelosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMelosActionPerformed
         // TODO add your handling code here:
-        logfile_melos me = new logfile_melos();
+        edit_melos me = new edit_melos();
         me.setVisible(true);
     }//GEN-LAST:event_jButtonMelosActionPerformed
 
     private void jButtonProsopikoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonProsopikoActionPerformed
         // TODO add your handling code here:
-        logfile_prosopiko pr = new logfile_prosopiko();
+        edit_prosopiko pr = new edit_prosopiko();
         pr.setVisible(true);
     }//GEN-LAST:event_jButtonProsopikoActionPerformed
 
     private void jButtonRafieraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRafieraActionPerformed
         // TODO add your handling code here:
-        logfile_rafiera ra = new logfile_rafiera();
+        edit_rafiera ra = new edit_rafiera();
         ra.setVisible(true);
     }//GEN-LAST:event_jButtonRafieraActionPerformed
 
     private void jButtonBiblioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBiblioActionPerformed
         // TODO add your handling code here:
-        logfile_biblio bi = new logfile_biblio();
+        edit_biblio bi = new edit_biblio();
         bi.setVisible(true);
     }//GEN-LAST:event_jButtonBiblioActionPerformed
 
     private void jButtonDanismosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDanismosActionPerformed
         // TODO add your handling code here:
-        logfile_danismos da = new logfile_danismos();
+        edit_danismos da = new edit_danismos();
         da.setVisible(true);
     }//GEN-LAST:event_jButtonDanismosActionPerformed
 
@@ -183,7 +185,7 @@ public class logfile extends javax.swing.JFrame {
     private void jButtonPisoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPisoActionPerformed
         // TODO add your handling code here:
         close();
-        main ma = new main();
+        LibraryManagementSystemV1 ma = new LibraryManagementSystemV1();
         ma.setVisible(true);
     }//GEN-LAST:event_jButtonPisoActionPerformed
 
@@ -208,21 +210,20 @@ public class logfile extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(logfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(edit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(logfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(edit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(logfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(edit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(logfile.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(edit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new logfile().setVisible(true);
+                new edit().setVisible(true);
             }
         });
     }
@@ -235,6 +236,6 @@ public class logfile extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPiso;
     private javax.swing.JButton jButtonProsopiko;
     private javax.swing.JButton jButtonRafiera;
-    private javax.swing.JLabel jLabelEmfanisi;
+    private javax.swing.JLabel jLabelEdit;
     // End of variables declaration//GEN-END:variables
 }
